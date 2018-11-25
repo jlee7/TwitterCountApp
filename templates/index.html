@@ -1,0 +1,32 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>This is a web service.</title>
+
+</head>
+<body>
+
+<form action="/twittercounts" method="POST">
+                <p>Suchwort:</p><input name="text1"><br>
+                <p>Adresse:</p><input name="text2"><br>
+                <p>Radius:</p><input name="text3"><br>
+              <input type="submit" value="Submit"></form>
+
+
+<br>
+<p>Anzahl:</p>
+<label id="value_label">
+    {{ count }}
+</label>
+<br>
+<br>
+
+<p>Export:</p>
+<a href='/get_json'>JSON Export from database</a>
+
+
+
+
+</body>
+</html>
